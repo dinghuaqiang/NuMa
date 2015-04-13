@@ -34,9 +34,9 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:ems="10"
+        android:ems="20"
         android:background="#F8F8FF"
-        android:text="@string/login_accountEditText"
+        android:hint="@string/login_accountEditText"
         android:textSize="15sp"
         android:textColor="@color/text"
         android:inputType="text" />
@@ -50,15 +50,15 @@
         android:layout_below="@+id/login_account_edit"
         android:layout_marginTop="20dp"
         android:layout_centerVertical="true"
-        android:ems="10"
+        android:ems="20"
         android:background="#F8F8FF"
-        android:text="@string/login_pwdEditText"
+        android:hint="@string/login_pwdEditText"
         android:textSize="15sp"
         android:textColor="@color/text"
         android:inputType="text" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/login_btn"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_pwd_edit"

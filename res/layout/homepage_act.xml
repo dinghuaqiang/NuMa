@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homepage_act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 轮播图 -->
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/viwepager" />
+
+    <!-- 状态 -->
+    <ImageButton
+        android:id="@+id/hp_states_imgBtn"
+        android:layout_width="80dp"
+        android:layout_height="115dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/viewFlipper"
+        android:src="@drawable/hp_states" />
+
+    <!-- 订单 -->
+    <ImageButton
+        android:id="@+id/hp_order_imgBtn"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/hp_states_imgBtn"
+        android:layout_toRightOf="@+id/hp_states_imgBtn"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/hp_order" />
+
+    <!-- 捡便宜 -->
+    <ImageButton
+        android:id="@+id/hp_cheap_imgBtn"
+        android:layout_width="80dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hp_states_imgBtn"
+        android:src="@drawable/hp_cheap" />
+
+    <!-- 评价 -->
+    <ImageButton
+        android:id="@+id/hp_evaluate_imgBtn"
+        android:layout_width="185dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/hp_evaluate" />
+
+    <!-- 验证 -->
+    <ImageButton
+        android:id="@+id/hp_verify_imgBtn"
+        android:layout_width="150dp"
+        android:layout_height="68dp"
+        android:layout_alignLeft="@+id/hp_order_imgBtn"
+        android:layout_below="@+id/hp_order_imgBtn"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/hp_verify" />
+
+    <!-- 会员 -->
+    <ImageButton
+        android:id="@+id/hp_vip_imgBtn"
+        android:layout_width="150dp"
+        android:layout_height="68dp"
+        android:layout_alignBottom="@+id/hp_cheap_imgBtn"
+        android:layout_toRightOf="@+id/hp_cheap_imgBtn"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/hp_vip" />
+
+    <!-- 我的-->
+    <ImageButton
+        android:id="@+id/hp_mine_imgBtn"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/hp_evaluate_imgBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hp_verify_imgBtn"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/hp_mine" />
+
+    <!-- 其他 -->
+    <ImageButton
+        android:id="@+id/hp_other_imgBtn"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/hp_other" />
+
+    <TextView
+        android:id="@+id/hp_states_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/hp_states_imgBtn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hp_text_size"
+        android:text="状态" />
+
+    <TextView
+        android:id="@+id/hp_order_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hp_states_tv"
+        android:layout_alignBottom="@+id/hp_states_tv"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hp_text_size"
+        android:text="订单" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/hp_cheap_imgBtn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hp_text_size"
+        android:text="捡便宜" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/hp_verify_imgBtn"
+        android:layout_alignTop="@+id/hp_verify_imgBtn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hp_text_size"
+        android:text="验证" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hp_states_imgBtn"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hp_text_size"
+        android:text="我的" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/hp_vip_imgBtn"
+        android:layout_alignTop="@+id/hp_vip_imgBtn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hp_text_size"
+        android:text="会员" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/hp_evaluate_imgBtn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hp_text_size"
+        android:text="评价" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hp_other_imgBtn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/hp_text_size"
+        android:text="其他" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/hp_order_tv"
+        android:layout_toLeftOf="@+id/hp_mine_imgBtn"
+        android:src="@drawable/hp_order_icon" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/hp_order_imgBtn"
+        android:layout_alignRight="@+id/hp_states_imgBtn"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/hp_states_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/hp_verify_imgBtn"
+        android:src="@drawable/hp_cheap_icon" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hp_verify_icon" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView2"
+        android:src="@drawable/hp_mine_icon" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hp_vip_imgBtn"
+        android:layout_toLeftOf="@+id/hp_other_imgBtn"
+        android:src="@drawable/hp_vip_icon" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hp_evaluate_imgBtn"
+        android:layout_toRightOf="@+id/imageView3"
+        android:src="@drawable/hp_evaluate_icon" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hp_other_imgBtn"
+        android:layout_toLeftOf="@+id/textView6"
+        android:src="@drawable/hp_other_icon" />
+
+</RelativeLayout>

@@ -4,4 +4,17 @@
     <color name="black">#000000</color>
     <color name="blue">#F8F8FF</color>
     <color name="text">#999899</color>
+    <color name="red">#F45A5A</color>
+    <color name="yellow">#F5B713</color>
+    <color name="green">#84D119</color>
+    <!-- 橙色 -->
+    <color name="orange">#FF864A</color>
+    <!-- 线条颜色 -->
+    <color name="linecolor">#D0D0D0</color>
+    <!-- 深绿色 -->
+    <color name="bottlegreen">#2FC8A9</color>
+    <!-- 淡紫色 -->
+    <color name="lilac">#747BE9</color>
+    <!-- 紫色 -->
+    <color name="purple">#9855F6</color>
 </resources>
