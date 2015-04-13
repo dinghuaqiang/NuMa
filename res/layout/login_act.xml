@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <TextView
+        android:id="@+id/logintitle_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="#2FC3F9"
+        android:gravity="center"
+        android:text="@string/login_title"
+        android:textColor="@color/blue"
+        android:textSize="23sp" />
+    
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/logintitle_tv"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_logo" />
+
+    <EditText
+        android:id="@+id/login_account_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/logintitle_tv"
+        android:layout_alignRight="@+id/logintitle_tv"
+        android:layout_below="@+id/login_logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:background="#F8F8FF"
+        android:text="@string/login_accountEditText"
+        android:textSize="15sp"
+        android:textColor="@color/text"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/login_pwd_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/login_account_edit"
+        android:layout_alignRight="@+id/login_account_edit"
+        android:layout_below="@+id/login_account_edit"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:background="#F8F8FF"
+        android:text="@string/login_pwdEditText"
+        android:textSize="15sp"
+        android:textColor="@color/text"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_pwd_edit"
+        android:layout_alignLeft="@+id/login_account_edit"
+        android:layout_alignRight="@+id/login_account_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="#2FC3F9"
+        android:textColor="#F8F8FF"
+        android:text="@string/login_btnText" />
+
+</RelativeLayout>
